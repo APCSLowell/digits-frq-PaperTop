@@ -11,10 +11,9 @@ public class Digits
 	    if (num == 0){
 		    digitList.add(0);
 	    } 
-	    int temp = num
-	    while (temp > 0){
-		    digitList.add(0, temp%10);
-		    temp = temp/10;
+	    while (num > 0){
+		    digitList.add(0, num%10);
+		    num = num/10;
 	    }
 	}
 
